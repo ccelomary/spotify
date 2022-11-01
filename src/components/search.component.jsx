@@ -42,7 +42,8 @@ const SearchComponent = (props)=> {
                         {
                             searchPlaylist.map((item, index) => {
                                 return <ItemCard key={item.id + index}
-                                        image={item.images[0].url}
+                                        image={item.images.length > 0 ? item.images[0].url:
+                                        "https://source.unsplash.com/QzpgqElvSiA"}
                                         name={item.name}
                                         artist={item.owner.display_name}
                                         type='playlists'
@@ -63,7 +64,8 @@ const SearchComponent = (props)=> {
                            {
                                  searchAlbum.map((item, index) => {
                                     return <ItemCard key={item.id + index}
-                                            image={item.images[0].url}
+                                            image={item.images.length > 0 ? item.images[0].url:
+                                            "https://source.unsplash.com/QzpgqElvSiA"}
                                             name={item.name}
                                             artist={item.artists.map(artist => artist.name).join(', ')}
                                             type='albums'
@@ -85,7 +87,8 @@ const SearchComponent = (props)=> {
                         {
                             searchTracks.map((item, index) => {
                                 return <ItemCard key={item.id + index}
-                                        image={item.album.images[0].url}
+                                        image={item.album.images.length ? item.album.images[0].url :
+                                        "https://source.unsplash.com/QzpgqElvSiA"}
                                         name={item.name}
                                         artist={item.artists.map(artist => artist.name).join(', ')}
                                         type='tracks'
