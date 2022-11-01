@@ -1,0 +1,33 @@
+
+
+
+.library {
+    background-color: #121212;
+    height:  calc(100vh - 60px - 55px);
+    overflow-y: auto;
+    width: 100%;
+}
+
+.library__container {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.library__title {
+    color : #fff;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+}
+
+.library__container__content__playlists__row__item {
+    display: grid;
+    gap: 15px;
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 12px;
+    row-gap: 12px;
+}
+

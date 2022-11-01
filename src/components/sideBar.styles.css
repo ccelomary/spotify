@@ -1,0 +1,122 @@
+
+.sideBar {
+    background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    user-select: none;
+    position: relative;
+    z-index: 999;
+}
+
+.sideBar__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 24px;
+    padding-left: 25px;
+    padding-right: 5px;
+    margin: 0 auto;
+}
+
+.sideBar__logo {
+    width: 131px;
+    height: 41px;
+}
+
+.sideBar__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.icons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+    color: #c0c0c0;
+}
+
+.icon:hover {
+    color: #ffffff;
+}
+
+.icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.liked___songs__container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    color: #c0c0c0;
+}
+
+.icon--active {
+    color: #ffffff !important;
+}
+
+.liked___songs__container:hover {
+    color: #ffffff;
+}
+.liked___songs__container img {
+    width: 25px;
+    height: 25px;
+}
+.liked___songs__container p {
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.icon p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.playlists {
+    color: #c0c0c0;
+    height: 200px;
+    overflow: auto;
+    position: relative;
+}
+
+
+.playlists__header_line {
+    height: 1px;
+    width: 90%;
+    margin-top: 20px;
+    background-color: #282828;
+}
+
+.playlists__container {
+    padding-top: 20px;  
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+}
+
+.playlist {
+    cursor: pointer;
+}
+
+.playlist p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.playlist:hover  {
+    color: #ffffff;
+}

@@ -1,0 +1,87 @@
+
+.topBar {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #1F1F1F;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topBar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+    min-width: 748px;
+    padding: 0 30px;
+}
+
+.topBar__user {
+    display: flex;
+    align-items: center;
+    background-color: #070707;
+    color: #fff;
+    cursor: not-allowed;
+    font-size: 12px;
+    padding: 3px;
+    padding-right: 15px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.topBar__user__avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+
+.topBar__user__avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.topBar__user:hover {
+    background-color: #282828;
+}
+
+
+.topBar__arrows {
+    display: flex;
+    gap: 20px;
+}
+
+
+.leftArrow, .rightArrow {
+    width: 35px;
+    height: 35px;
+    background-color: #070707;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.leftArrow img {
+    transform: translate(-1px);
+}
+
+.rightArrow img {
+    transform: translate(2px);
+}
+.leftArrow img, .rightArrow img {
+    width: 20px;
+    height: 20px;
+}
+
+.rightArrow img {
+    transform: rotate(180deg);
+}

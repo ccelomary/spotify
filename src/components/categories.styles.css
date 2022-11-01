@@ -1,0 +1,21 @@
+
+
+.Categories__container {
+    display: flex;
+    gap: 15px;
+}
+
+.Categories__container__item {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    padding: 13px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Categories__container__item--select{
+    background-color: #333333;
+}

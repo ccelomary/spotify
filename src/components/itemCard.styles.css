@@ -1,0 +1,82 @@
+
+
+.ItemCard {
+    padding: 16px;
+    background-color: #181818;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: fit-content;
+    max-width: 200px;
+}
+
+.ItemCard__container {
+    margin: 0 auto;
+}
+
+.ItemCard__container__image {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ItemCard__container__image img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ItemCard:hover {
+    background-color: #1C1C1C;
+}
+
+.ItemCard__container__info {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ItemCard__container__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.ItemCard__container__description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+
+.ItemCard__container__image__playButton {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    background-color: #5ADF65;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.ItemCard__container__image__playButton img  {
+    width:  30px;
+    height: 30px;
+    transform: translate(3px, 0px);
+}
+
+.ItemCard:hover .ItemCard__container__image__playButton {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.ItemCard__container__image__playButton--selected {
+    opacity: 1;
+    transform: translateY(-20px);
+}

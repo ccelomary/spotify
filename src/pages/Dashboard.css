@@ -1,0 +1,27 @@
+
+
+
+
+.Dashboard__container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #191919;
+}
+
+.Dashboard__sideBar {
+   width: 25%;
+   min-width: 250px;
+}
+
+.Dashboard__main {
+    width: 75%;
+    min-width: 748px;
+    position: relative;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.Dashboard__main__content {
+    padding-top: 60px;
+}
